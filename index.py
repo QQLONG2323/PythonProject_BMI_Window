@@ -63,15 +63,15 @@ class Window(tk.Tk):
         self.birthEntry.grid(column = 1, row = 1, sticky = tk.W, rowspan = 2, padx = 10)
 
         ttk.Label(bottomFrame, text = "身高(cm): ", style = "gridLabel.TLabel").grid(column = 0, row = 3, sticky = tk.E)
-        self.heightEntry = ttk.Entry(bottomFrame,style='gridEntry.TEntry')
-        self.heightEntry.grid(column=1,row=3,sticky=tk.W, padx = 10)
+        self.heightEntry = ttk.Entry(bottomFrame, style='gridEntry.TEntry')
+        self.heightEntry.grid(column = 1, row = 3, sticky = tk.W, padx = 10)
 
-        ttk.Label(bottomFrame,text="體重(kg): ",style='gridLabel.TLabel').grid(column=0,row=4,sticky=tk.E)
-        self.weightEntry = ttk.Entry(bottomFrame,style='gridEntry.TEntry')
-        self.weightEntry.grid(column=1,row=4,sticky=tk.W, padx = 10)
+        ttk.Label(bottomFrame,text="體重(kg): ", style='gridLabel.TLabel').grid(column=0, row=4, sticky=tk.E)
+        self.weightEntry = ttk.Entry(bottomFrame, style='gridEntry.TEntry')
+        self.weightEntry.grid(column=1, row=4, sticky=tk.W, padx = 10)
 
-        self.messageText = tk.Text(bottomFrame,height=5,width=35, state=tk.DISABLED, takefocus = 0, bd = 0)
-        self.messageText.grid(column=0,row=5,sticky=tk.N+tk.S,columnspan=2)
+        self.messageText = tk.Text(bottomFrame, height=5, width=35, state=tk.DISABLED, takefocus = 0, bd = 0)
+        self.messageText.grid(column=0, row=5, sticky=tk.N+tk.S, columnspan=2)
   
         #---------------commitFrame_start---------------
         #有左右兩個鍵
