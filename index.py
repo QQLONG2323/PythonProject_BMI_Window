@@ -79,7 +79,7 @@ class Window(tk.Tk):
         commitFrame.grid(column=0,row=6,columnspan=2)
         commitFrame.columnconfigure(0,pad=10)       
 
-        commitBtn = ttk.Button(commitFrame,text="計算", command = self.calculate_and_show)
+        commitBtn = ttk.Button(commitFrame, text="計算", command = self.calculate_and_show)
         commitBtn.grid(column=0,row=0)
         
         clearBtn = ttk.Button(commitFrame, text="清除", command = self.press_clear)
