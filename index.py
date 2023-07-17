@@ -162,7 +162,8 @@ class Window(tk.Tk):
         for key in constellation_dict:
             if (birth_month, birth_day) >= key:
                 constellation = constellation_dict[key]
-                
+            elif (birth_month, birth_day) < (1,20):
+                constellation = constellation_dict[(12, 22)]               
               
         try:   
             height = float(self.heightEntry.get())            
