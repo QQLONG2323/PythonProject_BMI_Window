@@ -141,6 +141,8 @@ class Window(tk.Tk):
         #星座的功能
         birth_month = int(birth.split("/")[1])
         birth_day = int(birth.split("/")[2])
+        #birth_month = birth_date.month
+        #birth_day = birth_date.day
 
         constellation_dict = {
             (1, 20): "水瓶座",
@@ -160,6 +162,7 @@ class Window(tk.Tk):
         for key in constellation_dict:
             if (birth_month, birth_day) >= key:
                 constellation = constellation_dict[key]
+                
               
         try:   
             height = float(self.heightEntry.get())            
